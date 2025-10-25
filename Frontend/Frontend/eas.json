@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 7.8.2"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_BACKEND_URL": "https://easyexit-backend-c6vg.onrender.com/api"
+      }
+    },
+    "preview": {
+      "developmentClient": true,
+      "android": {
+        "buildType": "apk"
+      },
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_BACKEND_URL": "https://easyexit-backend-c6vg.onrender.com/api"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_BACKEND_URL": "https://easyexit-backend-c6vg.onrender.com/api"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
